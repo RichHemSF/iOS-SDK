@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9B2FE76630FA609591662A9A716E212A4DFDFFC6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9B2FE76630FA609591662A9A716E212A4DFDFFC6" : 9223372036854775807,
+    "84415B93C94AC8995FB5F1612705EBCEAC852237" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7CB6A7FA-B461-4F36-8545-F58756BEB1DE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9B2FE76630FA609591662A9A716E212A4DFDFFC6" : "iOS-SDK\/",
+    "84415B93C94AC8995FB5F1612705EBCEAC852237" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MotionDnaSDKCocoaPodsExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CocoapodsExample\/MotionDnaSDKCocoaPodsExample\/MotionDnaSDKCocoaPodsExample.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/bitbucket.org\/navisens\/navisens-ios-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "84415B93C94AC8995FB5F1612705EBCEAC852237"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/navisens\/iOS-SDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9B2FE76630FA609591662A9A716E212A4DFDFFC6"
+    }
+  ]
+}
