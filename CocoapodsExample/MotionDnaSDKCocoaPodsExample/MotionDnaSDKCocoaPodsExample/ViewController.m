@@ -27,7 +27,7 @@
 {   
         [self.motionDnaManager stop];
 }
-//#error put your developer key in runMotionDna call
+#error put your developer key in runMotionDna call
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
