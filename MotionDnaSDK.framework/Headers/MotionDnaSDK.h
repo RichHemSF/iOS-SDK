@@ -20,7 +20,10 @@ FOUNDATION_EXPORT const unsigned char MotionDnaApplicationVersionString[];
 
 @interface MotionDnaSDK: NSObject
 
+-(void)runMotionDna:(NSString*)ID receiver:(id)receiver;
 -(void)runMotionDna:(NSString*)ID;
+-(void)receiveMotionDna:(MotionDna*)motionDna;
+
 -(void)runMotionDnaWithoutMotionManager:(NSString*)ID;
 -(void)failureToAuthenticate:(NSString*)msg;
 -(void)receiveDeviceMotion:(CMDeviceMotion*)deviceMotion;
