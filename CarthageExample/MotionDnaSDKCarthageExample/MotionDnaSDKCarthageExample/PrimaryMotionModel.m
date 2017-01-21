@@ -33,18 +33,10 @@ static NSArray<NSString*>* motionTypes;
     static dispatch_once_t onceToken_subTypes;
     dispatch_once(&onceToken_subTypes, ^{
         subMotionTypes = @[
-                           [NSArray array],
-                           @[[SecondaryMotionModel types][1],
-                             [SecondaryMotionModel types][2],
-                             [SecondaryMotionModel types][3],
-                             [SecondaryMotionModel types][4],
-                             [SecondaryMotionModel types][5],
-                             [SecondaryMotionModel types][6]
-                            ],
-                           @[[SecondaryMotionModel types][7],
-                             [SecondaryMotionModel types][8]
-                             ]
-                           ];
+                            [NSArray array],
+                            [[SecondaryMotionModel types] subarrayWithRange:NSMakeRange(5, 2)],
+                            [[SecondaryMotionModel types] subarrayWithRange:NSMakeRange(1, 4)]
+                        ];
     });
     return subMotionTypes[index];
 }
