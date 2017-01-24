@@ -45,26 +45,22 @@ MotionDnaObject * motionDnaObject_ = [[MotionDnaObject alloc] init];
 -(void)setLocationLatitude:(double)latitude Longitude:(double)longitude AndHeadingInDegrees:(double)heading; // This allows you to enter a start location and heading.
 -(void)setLocationAndHeadingGPSMag; // This will initialize by setting the position to the latest GPS position and magnetic heading.
 ```
-###How to’s:
-```
+
+##How to’s:
+###Improve battery consumption:
+
+###1/ Computation frequency
 
 ```
-##Improve battery consumption:
-```
-
-```
-#1/ Computation frequency
-```
-
 When initializing after having called runMotionDna, you can call setPowerMode:LOW_POWER,
 this will reduce our estimation frequency therefore the amount of computations done every second.
 
 ```
-#2/External location source
+###2/External location source
 ```
 
 ```
-#2.1/ Using setLocationNavisens
+###2.1/ Using setLocationNavisens
 ```
 
 When using setLocationNavisens, initialize our SDK with setExternalPositioningState:HIGH_ACCURACY (which is set by default),
@@ -77,7 +73,7 @@ the GPS data is being polled to kilometer accuracy and still have our SDK work i
 Note: setting the external positioning state to OFF will prevent our SDK from running in the background.
 
 ```
-#2.2/ Using other input sources
+###2.2/ Using other input sources
 ```
 If you which to initialize without our auto initialization you can safely call setExternalPositioningState:LOW_ACCURACY
 at startup.
