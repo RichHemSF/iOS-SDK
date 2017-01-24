@@ -57,9 +57,6 @@ this will reduce our estimation frequency therefore the amount of computations d
 
 ```
 ###2/External location source
-```
-
-```
 ###2.1/ Using setLocationNavisens
 ```
 
