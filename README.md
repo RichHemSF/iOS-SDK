@@ -72,5 +72,5 @@ Note: setting the external positioning state to OFF will prevent our SDK from ru
 ```
 ###2.2/ Using other input sources
 ```
-If you which to initialize without our auto initialization you can safely call setExternalPositioningState:LOW_ACCURACY
-at startup.
+If you wish to initialize without our auto initialization you can call setExternalPositioningState:LOW_ACCURACY
+at startup and call our other initialization methods.
