@@ -63,5 +63,7 @@ FOUNDATION_EXPORT const unsigned char MotionDnaApplicationVersionString[];
 -(BOOL)isRangingBLE;
 -(void)setPowerMode:(PowerConsumptionMode)mode;
 -(void)setTransportAutoswitchModeEnabled:(BOOL)state;
+-(void)setLocalHeadingOffsetInDegrees:(double)hdg;
+-(void)setCartesianOffsetInMetersX:(double)x Y:(double)y;
 
 @end

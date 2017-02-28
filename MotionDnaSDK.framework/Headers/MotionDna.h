@@ -137,6 +137,7 @@ struct Location
   XYZ localLocation;
   GlobalLocation globalLocation;
   double heading;
+  double localHeading;
   XY uncertainty;
   VerticalMotionStatus verticalMotionStatus;
 };
