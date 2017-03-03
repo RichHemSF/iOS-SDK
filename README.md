@@ -30,6 +30,7 @@ https://github.com/navisens/iOS-SDK/releases
 ```
 -(void)receiveMotionDna:(MotionDna*)motionDna; // You will receive the data from this method.
 -(void)failureToAuthenticate:(NSString*)msg; // If ever the SDK fails to authenticate the callback will be triggered with the appropriate error message.
+-(void)reportSensorTiming:(double)dt Msg:(NSString*)msg;//If a sensor event gets a timing error (e.g. delta time too large).
 ```
 3.Initialize the SDK: 
 ```
