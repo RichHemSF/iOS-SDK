@@ -44,4 +44,9 @@
     });
 }
 
+-(void)reportSensorTiming:(double)dt Msg:(NSString*)msg
+{
+    
+}
+
 @end

@@ -19,4 +19,7 @@
 @property ViewController* controller;
 
 -(void)receiveMotionDna:(MotionDna*)motionDna;
+-(void)failureToAuthenticate:(NSString*)msg;
+-(void)reportSensorTiming:(double)dt Msg:(NSString*)msg;
+
 @end

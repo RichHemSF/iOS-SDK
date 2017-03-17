@@ -37,7 +37,7 @@
     self.motionDnaManager=[[MotionDnaManager alloc] init];
     self.SDKVersionLabel.text= [[MotionDnaManager checkSDKVersion] stringByReplacingOccurrencesOfString:@"NAVISENS-" withString:@""];
     self.motionDnaManager.controller = self;
-    [self.motionDnaManager runMotionDna:@"yourdeveloperkey"];
+    [self.motionDnaManager runMotionDna:@"your developer key"];
     [self.motionDnaManager setBinaryFileLoggingEnabled:YES];
     [self.motionDnaManager setLocationAndHeadingGPSMag];
     [self.motionDnaManager setBackgroundModeEnabled:YES];
