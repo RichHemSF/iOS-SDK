@@ -1,4 +1,4 @@
-
+![Alt text](/CocoapodsExample/MotionDnaSDKCocoaPodsExample/MotionDnaSDKCocoaPodsExample.jpg?raw=true )
 ### Quick Start with CocoaPods
 
 ```
