@@ -5,6 +5,7 @@
 //  Created by Peter Wang on 11/1/16.
 //  Copyright © 2016 Navisens Inc. All rights reserved.
 //
+
 #import <CoreLocation/CoreLocation.h>
 #import <CoreMotion/CoreMotion.h>
 #include "MotionDnaManager.h"
@@ -24,7 +25,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;

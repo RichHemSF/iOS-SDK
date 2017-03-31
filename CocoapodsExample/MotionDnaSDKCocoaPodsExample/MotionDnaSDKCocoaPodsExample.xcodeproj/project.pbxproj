@@ -17,6 +17,8 @@
 		D0085B541DC916B70092F787 /* MotionDnaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0085B531DC916B70092F787 /* MotionDnaManager.m */; };
 		D0085B591DC91A380092F787 /* PrimaryMotionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0085B561DC91A380092F787 /* PrimaryMotionModel.m */; };
 		D0085B5A1DC91A380092F787 /* SecondaryMotionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0085B581DC91A380092F787 /* SecondaryMotionModel.m */; };
+		D0B4E52A1E81C85800E12F1C /* Point.fsh in Resources */ = {isa = PBXBuildFile; fileRef = D0B4E5291E81C85800E12F1C /* Point.fsh */; };
+		D0B4E52C1E81CC0100E12F1C /* Point.vsh in Resources */ = {isa = PBXBuildFile; fileRef = D0B4E52B1E81CC0100E12F1C /* Point.vsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		D0085B561DC91A380092F787 /* PrimaryMotionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimaryMotionModel.m; sourceTree = "<group>"; };
 		D0085B571DC91A380092F787 /* SecondaryMotionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondaryMotionModel.h; sourceTree = "<group>"; };
 		D0085B581DC91A380092F787 /* SecondaryMotionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondaryMotionModel.m; sourceTree = "<group>"; };
+		D0B4E5281E80BD1000E12F1C /* NVSSDataTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVSSDataTypes.h; sourceTree = "<group>"; };
+		D0B4E5291E81C85800E12F1C /* Point.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Point.fsh; sourceTree = "<group>"; };
+		D0B4E52B1E81CC0100E12F1C /* Point.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Point.vsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +96,7 @@
 		D0085B3A1DC9154F0092F787 /* MotionDnaSDKCocoaPodsExample */ = {
 			isa = PBXGroup;
 			children = (
+				D0B4E5281E80BD1000E12F1C /* NVSSDataTypes.h */,
 				D0085B551DC91A380092F787 /* PrimaryMotionModel.h */,
 				D0085B561DC91A380092F787 /* PrimaryMotionModel.m */,
 				D0085B571DC91A380092F787 /* SecondaryMotionModel.h */,
@@ -106,6 +112,8 @@
 				D0085B491DC9154F0092F787 /* LaunchScreen.storyboard */,
 				D0085B4C1DC9154F0092F787 /* Info.plist */,
 				D0085B3B1DC9154F0092F787 /* Supporting Files */,
+				D0B4E5291E81C85800E12F1C /* Point.fsh */,
+				D0B4E52B1E81CC0100E12F1C /* Point.vsh */,
 			);
 			path = MotionDnaSDKCocoaPodsExample;
 			sourceTree = "<group>";
@@ -187,7 +195,9 @@
 			files = (
 				D0085B4B1DC9154F0092F787 /* LaunchScreen.storyboard in Resources */,
 				D0085B481DC9154F0092F787 /* Assets.xcassets in Resources */,
+				D0B4E52A1E81C85800E12F1C /* Point.fsh in Resources */,
 				D0085B461DC9154F0092F787 /* Main.storyboard in Resources */,
+				D0B4E52C1E81CC0100E12F1C /* Point.vsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,8 +385,9 @@
 				DEVELOPMENT_TEAM = Z633UZ59K8;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MotionDnaSDKCocoaPodsExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Navisens-Inc.MotionDnaSDKCocoaPodsExample";
+				PRODUCT_BUNDLE_IDENTIFIER = com.navisens.MotionDnaSDKCocoaPodsExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -389,8 +400,9 @@
 				DEVELOPMENT_TEAM = Z633UZ59K8;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MotionDnaSDKCocoaPodsExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Navisens-Inc.MotionDnaSDKCocoaPodsExample";
+				PRODUCT_BUNDLE_IDENTIFIER = com.navisens.MotionDnaSDKCocoaPodsExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
