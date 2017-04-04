@@ -76,6 +76,13 @@ enum CalibrationStatus
   };
 typedef enum CalibrationStatus CalibrationStatus;
 
+enum EstimationMode
+{
+  LOCAL,
+  GLOBAL
+};
+typedef enum EstimationMode;
+
 struct MotionStatistics
 {
   double dwelling;
