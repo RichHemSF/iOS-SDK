@@ -44,6 +44,7 @@ FOUNDATION_EXPORT const unsigned char MotionDnaApplicationVersionString[];
 -(void)stop;
 +(NSString*)checkSDKVersion;
 -(NSString*)getDeviceID;
+-(NSString*)getDeviceName;
 
 -(void)setMapCorrectionEnabled:(BOOL)state;
 -(void)setCallbackUpdateRateInMs:(double)rate;
@@ -51,7 +52,7 @@ FOUNDATION_EXPORT const unsigned char MotionDnaApplicationVersionString[];
 -(void)setBinaryFileLoggingEnabled:(BOOL)state;
 -(void)setExternalPositioningState:(ExternalPositioningState)state;
 -(void)setGreetingEnabled:(BOOL)state;
--(void)setVehicleModeEnabled:(BOOL)state;
+-(void)setCarModeEnabled:(BOOL)state;
 -(void)startUDPHost:(NSString*)host AndPort:(NSString*)port;
 -(void)startUDP;
 -(void)stopUDP;
@@ -66,5 +67,8 @@ FOUNDATION_EXPORT const unsigned char MotionDnaApplicationVersionString[];
 -(void)setTransportAutoswitchModeEnabled:(BOOL)state;
 -(void)setLocalHeadingOffsetInDegrees:(double)hdg;
 -(void)setCartesianOffsetInMetersX:(double)x Y:(double)y;
+-(void)setARModeEnabled:(BOOL)state;
+//-(void)setEstimationMode:(EstimationMode)mode;
+-(void)resetLocalEstimation;
 
 @end
