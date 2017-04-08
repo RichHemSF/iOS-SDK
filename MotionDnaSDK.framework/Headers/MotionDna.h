@@ -81,7 +81,7 @@ enum EstimationMode
   LOCAL,
   GLOBAL
 };
-typedef enum EstimationMode;
+typedef enum EstimationMode EstimationMode;
 
 struct MotionStatistics
 {
