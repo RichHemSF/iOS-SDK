@@ -26,6 +26,7 @@ typedef enum SecondaryMotion SecondaryMotion;
 
 enum PowerConsumptionMode
   {
+    SUPER_LOW_CONSUMPTION,
     LOW_CONSUMPTION,
     MEDIUM_CONSUMPTION,
     PERFORMANCE
