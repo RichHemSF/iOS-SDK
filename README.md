@@ -23,11 +23,11 @@ https://github.com/navisens/iOS-SDK/releases
 
 ### Usage
 1.Have your class inherit from our MotionDnaSDK class: 
-```
+```objectivec
 @interface MotionDnaObject : MotionDnaSDK
 ```
 2.Implement the following methods: 
-```
+```objectivec
 -(void)receiveMotionDna:(MotionDna*)motionDna; // You will receive the data from this method.
 -(void)failureToAuthenticate:(NSString*)msg; // If ever the SDK fails to authenticate the callback will be triggered with the appropriate error message.
 -(void)reportSensorTiming:(double)dt Msg:(NSString*)msg;//If a sensor event gets a timing error (e.g. delta time too large).
@@ -37,11 +37,11 @@ https://github.com/navisens/iOS-SDK/releases
 MotionDnaObject * motionDnaObject_ = [[MotionDnaObject alloc] init];
 ```
 4.Run the SDK: 
-```
+```objectivec
 -(void)runMotionDna:(NSString*)ID;
 ```
 5.Choose an initilization system: 
-```
+```objectivec
 -(void)setLocationNavisens; //This lets us figure out the location from our prioprietary sensor fusion algorithms (may require walking 1-2 blocks) (recommended).
 -(void)setLocationLatitude:(double)latitude Longitude:(double)longitude AndHeadingInDegrees:(double)heading; // This allows you to enter a start location and heading.
 -(void)setLocationAndHeadingGPSMag; // This will initialize by setting the position to the latest GPS position and magnetic heading.
