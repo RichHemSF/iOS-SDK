@@ -79,7 +79,7 @@ at startup and call our other initialization methods.
 ```
 ###2.3/ Swift
 
-```
+```swift
 MotionDnaManager Class:
 
 import Foundation
