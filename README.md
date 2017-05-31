@@ -57,7 +57,7 @@ When initializing after having called runMotionDna, you can call setPowerMode:LO
 this will reduce our estimation frequency therefore the amount of computations done every second.
 
 ```
-###2/External location source
+###2/External location source<br/>
 ###2.1/ Using setLocationNavisens
 ```
 
@@ -75,3 +75,47 @@ Note: setting the external positioning state to OFF will prevent our SDK from ru
 ```
 If you wish to initialize without our auto initialization you can call setExternalPositioningState:LOW_ACCURACY
 at startup and call our other initialization methods.
+
+```
+###2.3/ Swift
+
+```
+MotionDnaManager Class:
+
+import Foundation
+import MotionDnaSDK
+
+class MotionDnaManager: MotionDnaSDK {
+
+    func start() {
+        runMotionDna("your-dev-key", receiver: self)
+    }
+
+    override func receive(_ motionDna: MotionDna!) {
+        NSLog("%.8f %.8f %.8f %.8f\n", motionDna.getLocation().heading, motionDna.getLocation().localLocation.x, motionDna.getLocation().localLocation.y, motionDna.getLocation().localLocation.z)
+    }
+
+    override func failure(toAuthenticate msg: String!) {
+    }
+
+    override func reportSensorTiming(_ dt: Double, msg: String!) {
+    }
+}
+
+ViewController Class:
+class ViewController: UIViewController {
+
+      var manager : MotionDnaManager!
+
+      override func viewDidLoad() {
+      	  super.viewDidLoad()
+	  manager = MotionDnaManager()
+	  manager.start()
+      }
+
+      override func didReceiveMemoryWarning() {
+      	  super.didReceiveMemoryWarning()
+      }
+}
+
+```
