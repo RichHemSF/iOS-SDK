@@ -33,7 +33,7 @@ https://github.com/navisens/iOS-SDK/releases
 -(void)reportSensorTiming:(double)dt Msg:(NSString*)msg;//If a sensor event gets a timing error (e.g. delta time too large).
 ```
 3.Initialize the SDK: 
-```
+```objectivec
 MotionDnaObject * motionDnaObject_ = [[MotionDnaObject alloc] init];
 ```
 4.Run the SDK: 
