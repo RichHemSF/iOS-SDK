@@ -24,6 +24,15 @@ enum SecondaryMotion
   };
 typedef enum SecondaryMotion SecondaryMotion;
 
+enum ErrorCode
+  {
+    SENSOR_TIMING = 0,
+    AUTHENTICATION_FAILED = 1,
+    SENSOR_MISSING = 2,
+    SDK_EXPIRED = 3
+  };
+typedef enum ErrorCode ErrorCode;
+
 enum PowerConsumptionMode
   {
     SUPER_LOW_CONSUMPTION,

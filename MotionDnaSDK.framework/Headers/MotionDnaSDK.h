@@ -25,8 +25,7 @@ FOUNDATION_EXPORT const unsigned char MotionDnaApplicationVersionString[];
 -(void)receiveMotionDna:(MotionDna*)motionDna;
 
 -(void)runMotionDnaWithoutMotionManager:(NSString*)ID;
--(void)failureToAuthenticate:(NSString*)msg;
--(void)reportSensorTiming:(double)dt Msg:(NSString*)msg;
+-(void)reportError:(ErrorCode)error WithMessage:(NSString*)message;
 -(void)receiveDeviceMotion:(CMDeviceMotion*)deviceMotion;
 -(void)setFloorNumber:(int)floor;
 -(void)setLocationLatitude:(double)latitude Longitude:(double)longitude AndHeadingInDegrees:(double)heading;
