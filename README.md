@@ -29,8 +29,13 @@ https://github.com/navisens/iOS-SDK/releases
 2.Implement the following methods: 
 ```objectivec
 -(void)receiveMotionDna:(MotionDna*)motionDna; // You will receive the data from this method.
--(void)failureToAuthenticate:(NSString*)msg; // If ever the SDK fails to authenticate the callback will be triggered with the appropriate error message.
--(void)reportSensorTiming:(double)dt Msg:(NSString*)msg;//If a sensor event gets a timing error (e.g. delta time too large).
+// Method reports and error from the SDK signaling some type of issue.
+// Errors:
+// SENSOR_TIMING -> if timing between samples becomes inconsistent
+// AUTHENTICATION_FAILED -> if authenticating to server failed
+// SENSOR_MISSING -> if a crucial sensor is missing
+// SDK_EXPIRED -> if the SDK expired
+-(void)reportError:(ErrorCode)error WithMessage(NSString*)message;
 ```
 3.Initialize the SDK: 
 ```objectivec
