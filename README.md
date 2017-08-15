@@ -36,6 +36,10 @@ https://github.com/navisens/iOS-SDK/releases
 // SENSOR_MISSING -> if a crucial sensor is missing
 // SDK_EXPIRED -> if the SDK expired
 -(void)reportError:(ErrorCode)error WithMessage(NSString*)message;
+// Location data from other devices in the room.
+-(void)receiveNetworkData:(MotionDna *)motionDna;
+// Receive custom messages from server and other devices.
+-(void)receiveNetworkData:(NetworkCode)opcode WithPayload:(NSDictionary *)payload;
 ```
 3.Initialize the SDK: 
 ```objectivec
