@@ -63,7 +63,8 @@ enum VerticalType
   {
     ESCALATOR_STAIRS,
     ELEVATOR,
-    LEVEL
+    LEVEL,
+    STAIRS
   };
 typedef enum VerticalType VerticalType;
 
@@ -92,6 +93,15 @@ enum EstimationMode
   GLOBAL
 };
 typedef enum EstimationMode EstimationMode;
+
+enum NetworkCode
+{
+  RAW_NETWORK_DATA,
+  ROOM_CAPACITY_STATUS,
+  EXCEEDED_ROOM_CONNECTION_CAPACITY,
+  EXCEEDED_SERVER_ROOM_CAPACITY
+};
+typedef enum NetworkCode NetworkCode;
 
 struct MotionStatistics
 {
