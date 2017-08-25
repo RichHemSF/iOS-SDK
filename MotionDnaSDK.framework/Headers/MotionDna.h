@@ -198,13 +198,6 @@ enum MapObjectType
   };
 typedef enum MapObjectType MapObjectType;
 
-@interface NVSSMessage : NSObject
-@property BOOL hasMessageToEnd;
-@property BOOL hasMessage;
-@property NSString* messageToEnd;
-@property NSString* message;
-@end
-
 @interface MotionDna : NSObject<NSObject>
 {
   @protected
@@ -218,8 +211,6 @@ typedef enum MapObjectType MapObjectType;
   MotionStatistics motionStatistics_;
   MotionStatistics polygonMotionStatistics_;
   OrientationQuaternion quaternion_;
-  @public
-    NVSSMessage* message_;
 }
 
 -(Location)getLocation;
