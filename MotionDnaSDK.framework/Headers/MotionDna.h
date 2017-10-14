@@ -4,25 +4,13 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-enum PrimaryMotion
+enum MotionType
   {
     STATIONARY,
     FIDGETING,
     FORWARD
   };
-typedef enum PrimaryMotion PrimaryMotion;
-
-enum SecondaryMotion
-  {
-    UNDEFINED,
-    FORWARD_IN_HAND,
-    FORWARD_IN_HAND_SWINGING,
-    FORWARD_IN_POCKET,
-    FORWARD_IN_CALL,
-    DWELLING,
-    JUMPING
-  };
-typedef enum SecondaryMotion SecondaryMotion;
+typedef enum MotionType MotionType;
 
 enum ErrorCode
   {
@@ -173,8 +161,7 @@ typedef struct Location Location;
 struct Motion
 {
   double stepFrequency;
-  PrimaryMotion primaryMotion;
-  SecondaryMotion secondaryMotion;
+  MotionType motionType;
 };
 typedef struct Motion Motion;
 
