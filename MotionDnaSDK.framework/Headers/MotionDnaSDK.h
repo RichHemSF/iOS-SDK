@@ -75,5 +75,6 @@ FOUNDATION_EXPORT const unsigned char MotionDnaApplicationVersionString[];
 -(void)setARModeEnabled:(BOOL)state;
 -(void)setEstimationMode:(EstimationMode)mode;
 -(void)resetLocalEstimation;
+-(void)enableBackgroundSensors;
 
 @end
