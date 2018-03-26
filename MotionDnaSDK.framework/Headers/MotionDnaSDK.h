@@ -31,6 +31,8 @@ FOUNDATION_EXPORT const unsigned char MotionDnaApplicationVersionString[];
 -(void)receiveDeviceMotion:(CMDeviceMotion*)deviceMotion;
 -(void)setFloorNumber:(int)floor;
 -(void)setLocationLatitude:(double)latitude Longitude:(double)longitude AndHeadingInDegrees:(double)heading;
+- (void)setGroundTruthPointWithIdentifier:(NSInteger)identifier andLabel:(NSString *)label;
+- (void)setGroundTruthPointWithIdentifier:(NSInteger)identifier;
 -(void)setLocationAndHeadingGPSMag;
 -(void)setLocationLatitude:(double)latitude Longitude:(double)longitude;
 -(void)setLocationGPSOnly;
@@ -76,5 +78,4 @@ FOUNDATION_EXPORT const unsigned char MotionDnaApplicationVersionString[];
 -(void)setEstimationMode:(EstimationMode)mode;
 -(void)resetLocalEstimation;
 -(void)enableBackgroundSensors;
-
 @end
