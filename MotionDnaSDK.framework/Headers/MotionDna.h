@@ -148,6 +148,8 @@ struct Location
   XY uncertainty;
   VerticalMotionStatus verticalMotionStatus;
   int floor;
+  double absoluteAltitude;
+  double absoluteAltitudeUncertainty;
 };
 typedef struct Location Location;
 

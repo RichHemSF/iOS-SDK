@@ -29,8 +29,11 @@ FOUNDATION_EXPORT const unsigned char MotionDnaApplicationVersionString[];
 -(void)runMotionDnaWithoutMotionManager:(NSString*)ID;
 -(void)reportError:(ErrorCode)error WithMessage:(NSString*)message;
 -(void)receiveDeviceMotion:(CMDeviceMotion*)deviceMotion;
+-(void)setAverageFloorHeight:(double)floorHeight;
 -(void)setFloorNumber:(int)floor;
 -(void)setLocationLatitude:(double)latitude Longitude:(double)longitude AndHeadingInDegrees:(double)heading;
+- (void)setGroundTruthPointWithIdentifier:(NSInteger)identifier andLabel:(NSString *)label;
+- (void)setGroundTruthPointWithIdentifier:(NSInteger)identifier;
 -(void)setLocationAndHeadingGPSMag;
 -(void)setLocationLatitude:(double)latitude Longitude:(double)longitude;
 -(void)setLocationGPSOnly;
@@ -68,13 +71,12 @@ FOUNDATION_EXPORT const unsigned char MotionDnaApplicationVersionString[];
 -(void)registerBeaconRegionWithUUID:(NSUUID *)proximityUUID andIdentifier:(NSString*)identifier;
 -(BOOL)isRangingBLE;
 -(void)setPowerMode:(PowerConsumptionMode)mode;
--(void)setVehicleModeEnabled:(BOOL)state;
--(void)setTransportAutoswitchModeEnabled:(BOOL)state;
 -(void)setLocalHeadingOffsetInDegrees:(double)hdg;
 -(void)setCartesianOffsetInMetersX:(double)x Y:(double)y;
 -(void)setARModeEnabled:(BOOL)state;
 -(void)setEstimationMode:(EstimationMode)mode;
 -(void)resetLocalEstimation;
 -(void)enableBackgroundSensors;
+-(void)addFloorNumber:(int)floor AndHeight:(double)height;
 
 @end
