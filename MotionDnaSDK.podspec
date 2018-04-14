@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MotionDnaSDK'
-  s.version='1.2.8'
+  s.version='1.3.0'
   s.summary          = 'MotionDnaSDK.'
 
 # This description is used to generate tags and improve search results.
