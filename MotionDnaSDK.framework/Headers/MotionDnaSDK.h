@@ -54,6 +54,7 @@ FOUNDATION_EXPORT const unsigned char MotionDnaApplicationVersionString[];
 -(void)setCallbackUpdateRateInMs:(double)rate;
 -(void)setNetworkUpdateRateInMs:(double)rate;
 -(void)setBinaryFileLoggingEnabled:(BOOL)state;
+-(void)setBackpropagationEnabled:(BOOL)state;
 -(void)setExternalPositioningState:(ExternalPositioningState)state;
 -(void)startUDPRoom:(NSString*)room AtHost:(NSString*)host AndPort:(NSString*)port;
 -(void)startUDPHost:(NSString*)host AndPort:(NSString*)port;
