@@ -193,7 +193,6 @@ typedef enum MapObjectType MapObjectType;
   NSString * deviceName_;
   NSString * motionName_;
   MotionStatistics motionStatistics_;
-  MotionStatistics polygonMotionStatistics_;
   OrientationQuaternion quaternion_;
   double timestamp_;
 }
@@ -207,7 +206,6 @@ typedef enum MapObjectType MapObjectType;
 -(NSString*)getDeviceName;
 -(NSString*)getMotionName;
 -(MotionStatistics)getMotionStatistics;
--(MotionStatistics)getPolygonMotionStatistics;
 -(OrientationQuaternion)getQuaternion;
 -(XY)getDebugVector;
 -(double)getTimestamp;
