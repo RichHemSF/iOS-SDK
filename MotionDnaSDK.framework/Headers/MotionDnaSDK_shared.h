@@ -80,9 +80,12 @@ FOUNDATION_EXPORT const unsigned char MotionDnaApplicationVersionString[];
 -(void)setCartesianOffsetInMetersX:(double)x Y:(double)y;
 -(void)setCartesianPositionX:(double)x Y:(double)y;
 -(void)setLocalHeading:(double)hdg;
+-(void)resetLocalHeading;
+
 -(void)setARModeEnabled:(BOOL)state;
 -(void)setEstimationMode:(EstimationMode)mode;
 -(void)resetLocalEstimation;
+
 -(void)enableBackgroundSensors;
 -(void)addFloorNumber:(int)floor AndHeight:(double)height;
 
