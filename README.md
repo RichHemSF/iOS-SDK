@@ -80,13 +80,13 @@ the GPS data is being polled to kilometer accuracy and still have our SDK work i
 Note: setting the external positioning state to OFF will prevent our SDK from running in the background.
 
 ```
-###2.2/ Using other input sources
+### 2.2/ Using other input sources
 ```
 If you wish to initialize without our auto initialization you can call setExternalPositioningState:LOW_ACCURACY
 at startup and call our other initialization methods.
 
 ```
-###2.3/ Swift
+### 2.3/ Swift
 
 ```swift
 MotionDnaManager Class:
