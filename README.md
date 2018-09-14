@@ -1,4 +1,8 @@
-![Alt text](/CocoapodsExample/MotionDnaSDKCocoaPodsExample/MotionDnaSDKCocoaPodsExample.jpg?raw=true )
+
+![](https://www.navisens.com/index.html)
+![](https://www.navisens.com/img/how-does-it-work-mobile.gif)
+
+
 ### Quick Start with CocoaPods
 
 ```
@@ -7,12 +11,6 @@ pod install
 open CocoapodsExample/MotionDnaSDKCocoaPodsExample.xcworkspace
 ```
 
-### Quick Start with Carthage
-
-```
-cd CarthageExample/MotionDnaSDKCarthageExample
-carthage update --platform iOS
-```
 ### Documentation
 
 http://docs.navisens.com
