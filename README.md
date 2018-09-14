@@ -1,6 +1,5 @@
 
 
-![](https://miro.medium.com/fit/c/240/240/1*w3dfg7v3CuRXchzrjwqOOw.png)
 <img align="right" width="100" height="100" src="https://miro.medium.com/fit/c/240/240/1*w3dfg7v3CuRXchzrjwqOOw.png">
 ![](https://www.navisens.com/img/how-does-it-work-mobile.gif)
 
