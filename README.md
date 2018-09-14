@@ -8,7 +8,7 @@ The Navisens™ motionDNA™ SDK is a software-only location platform that opera
 For any technical questions please contact us at: support@navisens.com.
 
 ### Getting to Work
-* [Helloworld](https://github.com/navisens/iOS-app-helloworld): quick start and intro for our native SDK
+* [Hello World](https://github.com/navisens/iOS-app-helloworld): quick start and intro for our native SDK
 * [Plugins](https://github.com/navisens/NaviDocs/blob/master/BEER.iOS.md): advanced native SDK documentation
 * [Documentation](https://github.com/navisens/NaviDocs/blob/master/API.iOS.md): quick start for data visualization services using our plugins
 * [ArcGIS](https://github.com/navisens/ios-arcgis-motiondna-integration): integration with ArcGIS visualization
