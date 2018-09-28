@@ -21,7 +21,52 @@ FOUNDATION_EXPORT const unsigned char MotionDnaApplicationVersionString[];
 
 #import "MotionDna.h"
 
-@interface MotionDnaSDK: NSObject
+@protocol MotionDnaLocationManagerDataSource;
+@protocol MotionDnaLocationManagerDelegate<NSObject>
+
+@required
+- (void)locationManager:(id<MotionDnaLocationManagerDataSource>)manager
+     didUpdateLocations:(NSArray<CLLocation *> *)locations;
+- (void)locationManager:(id<MotionDnaLocationManagerDataSource>)manager
+       didFailWithError:(NSError *)error;
+- (void)locationManager:(id<MotionDnaLocationManagerDataSource>)manager
+       didUpdateHeading:(CLHeading *)newHeading;
+- (BOOL)locationManagerShouldDisplayHeadingCalibration:(id<MotionDnaLocationManagerDataSource>)manager;
+
+@end
+
+@protocol MotionDnaLocationManagerDataSource <NSObject>
+@optional
+@property (readwrite, nonatomic, weak) id<MotionDnaLocationManagerDelegate> _Nullable motionDnaDelegate;
+@property (readwrite, nonatomic) CLAuthorizationStatus authorizationStatus;
+@property (readwrite, nonatomic) CLDeviceOrientation headingOrientation;
+
+- (void)requestAlwaysAuthorization;
+- (void)requestWhenInUseAuthorization;
+- (void)startUpdatingLocation;
+- (void)stopUpdatingLocation;
+- (void)startUpdatingHeading;
+- (void)stopUpdatingHeading;
+- (void)dismissHeadingCalibrationDisplay;
+
+@end
+
+@interface MotionDnaSDK: NSObject <MotionDnaLocationManagerDataSource>
+
+@property (readwrite, nonatomic, weak) id<MotionDnaLocationManagerDelegate> _Nullable motionDnaDelegate;
+@property (readwrite, nonatomic, getter=authorizationStatus) CLAuthorizationStatus authorizationStatus;
+@property (readwrite, nonatomic, getter=headingOrientation) CLDeviceOrientation headingOrientation;
+
+- (void)requestAlwaysAuthorization;
+- (void)requestWhenInUseAuthorization;
+- (void)startUpdatingLocation;
+- (void)stopUpdatingLocation;
+- (void)startUpdatingHeading;
+- (void)stopUpdatingHeading;
+- (void)dismissHeadingCalibrationDisplay;
+
+- (CLAuthorizationStatus)authorizationStatus;
+- (CLDeviceOrientation)headingOrientation;
 
 -(void)runMotionDna:(NSString*)ID receiver:(id)receiver;
 -(void)runMotionDna:(NSString*)ID;
