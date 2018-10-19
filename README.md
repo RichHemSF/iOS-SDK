@@ -1,4 +1,4 @@
-
+[![Cocoapods (Releases)](https://img.shields.io/cocoapods/v/MotionDnaSDK.svg?style=plastic)](https://cocoapods.org/pods/MotionDnaSDK)
 
 <img align="left"  src="https://miro.medium.com/fit/c/240/240/1*w3dfg7v3CuRXchzrjwqOOw.png">
 <img align="right" src="https://www.navisens.com/img/how-does-it-work-mobile.gif">
