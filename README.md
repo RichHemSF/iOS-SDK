@@ -1,7 +1,7 @@
 [![Cocoapods (Releases)](https://img.shields.io/cocoapods/v/MotionDnaSDK.svg?style=plastic)](https://cocoapods.org/pods/MotionDnaSDK)
 
 <img align="left"  src="https://miro.medium.com/fit/c/240/240/1*w3dfg7v3CuRXchzrjwqOOw.png">
-<img align="right" src="https://www.navisens.com/img/how-does-it-work-mobile.gif">
+<img align="right" src="https://navisens.com/img/how-does-it-work-mobile.gif">
 
 The Navisens™ motionDNA™ SDK is a software-only location platform that operates indoors and outdoors without relying on infrastructure such as WiFi Access Points (APs), Bluetooth beacons, or GPS. Our SDK can be embedded into mobile apps to unlock hyper accurate location. Our simple to use SDK allows developers to build location applications to interact with the user, guiding them indoors and outdoors, detecting proximity to items, and triggering actions and notifications based on the user's location and motion. 
 
