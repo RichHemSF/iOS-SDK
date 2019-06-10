@@ -6,6 +6,7 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 
+
 Pod::Spec.new do |s|
   s.name             = 'MotionDnaSDK'
   s.version='1.7.2'
