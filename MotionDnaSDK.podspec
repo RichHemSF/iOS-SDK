@@ -45,3 +45,4 @@ TODO: Add long description of the pod here.
   s.frameworks = 'AVFoundation', 'Accelerate', 'CoreBluetooth', 'CoreData', 'CoreGraphics', 'CoreLocation', 'CoreText', 'GLKit', 'ImageIO', 'OpenGLES', 'QuartzCore', 'Security', 'SystemConfiguration'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
+
