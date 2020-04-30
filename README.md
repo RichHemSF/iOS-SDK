@@ -9,7 +9,7 @@ For any technical questions please contact us at: support@navisens.com.
 
 ### Getting to Work
 * [Hello World](https://github.com/navisens/iOS-app-helloworld): quick start and intro for our native SDK
-* [Documentation](https://github.com/navisens/NaviDocs/blob/master/API.iOS.md): quick start for data visualization services using our plugins
+* [Documentation](https://github.com/navisens/NaviDocs/blob/master/API.iOS.md): details on our API
 * [ArcGIS](https://github.com/navisens/ios-arcgis-motiondna-integration): integration with ArcGIS visualization
 * [MapBox](https://github.com/navisens/ios-mapbox-motiondna-integration): integration with MapBox visualization
 * [Here](https://github.com/navisens/ios-here-motiondna-integration): integration with Here visualization
